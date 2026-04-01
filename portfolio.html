@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio — Tanisha L. Williams</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- NAV -->
+    <nav class="site-nav">
+      <div class="container">
+        <a href="index.html" class="nav-logo">Tanisha L. Williams</a>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="portfolio.html" class="active">Portfolio</a></li>
+          <li><a href="resume.html">Resume</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <button class="nav-hamburger" id="hamburger" aria-label="Open menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- MOBILE MENU -->
+    <div class="nav-mobile-menu" id="mobileMenu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- HERO -->
+    <section class="portfolio-hero page-top">
+      <div class="container">
+        <h4 style="color: var(--coral); margin-bottom: 0.5rem">My Work</h4>
+        <h1>Portfolio</h1>
+        <p>
+          A selection of projects from my studies in digital media, graphic design, animation, and web design at Saint
+          Paul College.
+        </p>
+      </div>
+    </section>
+
+    <!-- ACCORDION SECTIONS -->
+    <div class="portfolio-accordion">
+      <!-- PRINT DESIGN -->
+      <div class="accordion-item">
+        <button class="accordion-header active" data-target="print">
+          <div class="accordion-header-left">
+            <span class="accordion-icon">🖨️</span>
+            <div>
+              <div class="accordion-title">Print Design</div>
+              <div class="accordion-count">Brochures · Programs · Postcards</div>
+            </div>
+          </div>
+          <svg
+            class="accordion-chevron"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <polyline points="6 9 12 15 18 9"></polyline>
+          </svg>
+        </button>
+        <div class="accordion-body open" id="print">
+          <div class="portfolio-grid">
+            <div class="portfolio-card">
+              <img src="images/BrochureMockup2.jpg" alt="Cookout Bar &amp; Grill Brochure" />
+              <div class="portfolio-card-overlay">
+                <h3>Cookout Bar &amp; Grill Brochure</h3>
+                <p>Tri-fold brochure — exterior view</p>
+              </div>
+            </div>
+
+            <div class="portfolio-card">
+              <img src="images/BrochureMockup4.jpg" alt="Cookout Bar &amp; Grill Brochure Interior" />
+              <div class="portfolio-card-overlay">
+                <h3>Cookout Bar &amp; Grill Brochure</h3>
+                <p>Interior spread with full menu &amp; events</p>
+              </div>
+            </div>
+
+            <div class="portfolio-card">
+              <img src="images/PostCardProject.jpg" alt="Big Slice Pizzeria Postcard" />
+              <div class="portfolio-card-overlay">
+                <h3>Big Slice Pizzeria Postcard</h3>
+                <p>Double-sided direct mail postcard</p>
+              </div>
+            </div>
+
+            <div class="portfolio-card">
+              <img src="images/MiddleSchoolAwardProgram02.jpg" alt="8th Grade Celebration Program Cover" />
+              <div class="portfolio-card-overlay">
+                <h3>8th Grade Celebration Program</h3>
+                <p>SPPS Online Middle School — Class of 2025</p>
+              </div>
+            </div>
+
+            <div class="portfolio-card">
+              <img src="images/MiddleSchoolAwardProgram4.jpg" alt="Award Program Interior" />
+              <div class="portfolio-card-overlay">
+                <h3>Celebration Program — Interior</h3>
+                <p>Program order &amp; class roster</p>
+              </div>
+            </div>
+
+            <div class="portfolio-card">
+              <img src="images/MiddleSchoolAwardProgram6.jpg" alt="Award Program Spread" />
+              <div class="portfolio-card-overlay">
+                <h3>Celebration Program — Spread</h3>
+                <p>Full open spread view</p>
+              </div>
+            </div>
+
+            <div class="portfolio-card">
+              <img src="images/MiddleSchoolAwardProgram8.jpg" alt="Award Program Detail" />
+              <div class="portfolio-card-overlay">
+                <h3>Celebration Program — Detail</h3>
+                <p>Student involvement &amp; special thanks</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- EDITORIAL DESIGN -->
+      <div class="accordion-item">
+        <button class="accordion-header" data-target="editorial">
+          <div class="accordion-header-left">
+            <span class="accordion-icon">📰</span>
+            <div>
+              <div class="accordion-title">Editorial Design</div>
+              <div class="accordion-count">Magazine Layouts · Spreads</div>
+            </div>
+          </div>
+          <svg
+            class="accordion-chevron"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <polyline points="6 9 12 15 18 9"></polyline>
+          </svg>
+        </button>
+        <div class="accordion-body" id="editorial">
+          <div class="portfolio-grid">
+            <div class="portfolio-card">
+              <img src="images/Magazine.jpg" alt="Teen Magazine Spread 1" />
+              <div class="portfolio-card-overlay">
+                <h3>Teen Magazine — Spread 1</h3>
+                <p>Editorial layout with multi-column typography</p>
+              </div>
+            </div>
+
+            <div class="portfolio-card">
+              <img src="images/Magazine2.jpg" alt="Teen Magazine Spread 2" />
+              <div class="portfolio-card-overlay">
+                <h3>Teen Magazine — Spread 2</h3>
+                <p>Prom Night feature with glam aesthetic</p>
+              </div>
+            </div>
+
+            <div class="portfolio-card">
+              <img src="images/Magazine3.jpg" alt="Teen Magazine Spread 3" />
+              <div class="portfolio-card-overlay">
+                <h3>Teen Magazine — Spread 3</h3>
+                <p>Consistent visual language across layouts</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- GRAPHIC DESIGN / ILLUSTRATION -->
+      <div class="accordion-item">
+        <button class="accordion-header" data-target="illustration">
+          <div class="accordion-header-left">
+            <span class="accordion-icon">🎨</span>
+            <div>
+              <div class="accordion-title">Graphic Design &amp; Illustration</div>
+              <div class="accordion-count">Illustrator · InDesign · Photoshop</div>
+            </div>
+          </div>
+          <svg
+            class="accordion-chevron"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <polyline points="6 9 12 15 18 9"></polyline>
+          </svg>
+        </button>
+        <div class="accordion-body" id="illustration">
+          <div class="portfolio-placeholder">
+            ✦ Additional work samples coming soon.
+            <a href="contact.html">Contact me</a>
+            to request the full portfolio.
+          </div>
+        </div>
+      </div>
+
+      <!-- ANIMATION & VIDEO -->
+      <div class="accordion-item">
+        <button class="accordion-header" data-target="animation">
+          <div class="accordion-header-left">
+            <span class="accordion-icon">🎬</span>
+            <div>
+              <div class="accordion-title">Animation &amp; Video</div>
+              <div class="accordion-count">Adobe Animate · 3D · Digital Video</div>
+            </div>
+          </div>
+          <svg
+            class="accordion-chevron"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <polyline points="6 9 12 15 18 9"></polyline>
+          </svg>
+        </button>
+        <div class="accordion-body" id="animation">
+          <div class="portfolio-placeholder">
+            ✦ Video and animation samples available on request.
+            <a href="contact.html">Get in touch</a>
+            .
+          </div>
+        </div>
+      </div>
+
+      <!-- PHOTOGRAPHY -->
+      <div class="accordion-item">
+        <button class="accordion-header" data-target="photography">
+          <div class="accordion-header-left">
+            <span class="accordion-icon">📷</span>
+            <div>
+              <div class="accordion-title">Photography</div>
+              <div class="accordion-count">Digital Photography · Editing</div>
+            </div>
+          </div>
+          <svg
+            class="accordion-chevron"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <polyline points="6 9 12 15 18 9"></polyline>
+          </svg>
+        </button>
+        <div class="accordion-body" id="photography">
+          <div class="portfolio-placeholder">
+            ✦ Photography samples coming soon.
+            <a href="contact.html">Contact me</a>
+            to see full work.
+          </div>
+        </div>
+      </div>
+
+      <!-- WEB DESIGN -->
+      <div class="accordion-item">
+        <button class="accordion-header" data-target="web">
+          <div class="accordion-header-left">
+            <span class="accordion-icon">🌐</span>
+            <div>
+              <div class="accordion-title">Web Design</div>
+              <div class="accordion-count">HTML · CSS · Interactive Design</div>
+            </div>
+          </div>
+          <svg
+            class="accordion-chevron"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <polyline points="6 9 12 15 18 9"></polyline>
+          </svg>
+        </button>
+        <div class="accordion-body" id="web">
+          <div class="portfolio-placeholder">
+            ✦ Web design projects coming soon — including this site!
+            <a href="contact.html">Reach out</a>
+            to learn more.
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end accordion -->
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+      <p>
+        © 2026
+        <span>Tanisha L. Williams</span>
+        · Saint Paul, MN · Digital Media &amp; Graphic Design
+      </p>
+    </footer>
+
+    <script>
+      // Nav hamburger
+      const hamburger = document.getElementById("hamburger");
+      const mobileMenu = document.getElementById("mobileMenu");
+      hamburger.addEventListener("click", () => {
+        hamburger.classList.toggle("open");
+        mobileMenu.classList.toggle("open");
+      });
+
+      // Accordion
+      document.querySelectorAll(".accordion-header").forEach((btn) => {
+        btn.addEventListener("click", () => {
+          const targetId = btn.dataset.target;
+          const body = document.getElementById(targetId);
+          const isOpen = body.classList.contains("open");
+
+          // Toggle this one
+          btn.classList.toggle("active", !isOpen);
+          body.classList.toggle("open", !isOpen);
+        });
+      });
+    </script>
+  </body>
+</html>

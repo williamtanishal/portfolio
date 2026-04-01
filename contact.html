@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Tanisha L. Williams</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="site-nav">
+    <div class="container">
+      <a href="index.html" class="nav-logo">Tanisha L. Williams</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+      <button class="nav-hamburger" id="hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="nav-mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="resume.html">Resume</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- HERO -->
+  <section class="contact-hero page-top">
+    <div class="container">
+      <h4 style="color: var(--coral); margin-bottom: 0.5rem;">Say Hello</h4>
+      <h1>Contact Me</h1>
+      <p>Available for freelance design work, full-time opportunities, and collaborative projects in digital media, graphic design, and web design.</p>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section class="page-section">
+    <div class="container">
+      <div class="contact-grid">
+
+        <!-- Contact Info -->
+        <div class="contact-info">
+          <h2>Let's connect</h2>
+          <div class="divider"></div>
+          <p>I'm currently based in Saint Paul, MN and open to both local and remote opportunities. Whether you have a project in mind or just want to talk design — I'd love to hear from you.</p>
+
+          <div class="contact-item">
+            <div class="contact-item-icon">✉</div>
+            <div class="contact-item-text">
+              <strong>Email</strong>
+              <a href="mailto:your.email@example.com">your.email@example.com</a>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-item-icon">in</div>
+            <div class="contact-item-text">
+              <strong>LinkedIn</strong>
+              <a href="https://www.linkedin.com/in/tanisha-williams-97a414207/" target="_blank">linkedin.com/in/tanisha-williams</a>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-item-icon">📍</div>
+            <div class="contact-item-text">
+              <strong>Location</strong>
+              Saint Paul, MN
+            </div>
+          </div>
+
+          <div style="margin-top: 2rem;">
+            <a href="resume.html" class="btn btn-blue">View My Resume</a>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form">
+          <h3>Send a message</h3>
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" placeholder="Jane Smith">
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" placeholder="jane@example.com">
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" placeholder="Project inquiry, collaboration, etc.">
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" placeholder="Tell me about your project or opportunity..."></textarea>
+          </div>
+          <button class="btn btn-primary" style="width: 100%;" onclick="handleSubmit()">Send Message</button>
+          <p id="form-note" style="margin-top: 1rem; font-size: 0.82rem; color: var(--gray-mid); display: none;">
+            ✓ Thanks for reaching out! I'll get back to you soon.
+          </p>
+          <p style="margin-top: 0.75rem; font-size: 0.78rem; color: var(--gray-mid);">
+            Note: To enable form submissions, connect this to a service like <a href="https://formspree.io" target="_blank">Formspree</a> or <a href="https://www.netlify.com/products/forms/" target="_blank">Netlify Forms</a>.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <p>© 2026 <span>Tanisha L. Williams</span> · Saint Paul, MN · Digital Media &amp; Graphic Design</p>
+  </footer>
+
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobileMenu');
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('open');
+      mobileMenu.classList.toggle('open');
+    });
+
+    function handleSubmit() {
+      document.getElementById('form-note').style.display = 'block';
+    }
+  </script>
+
+</body>
+</html>
